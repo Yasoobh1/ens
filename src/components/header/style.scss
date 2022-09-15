@@ -1,0 +1,38 @@
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 50px;
+}
+.header {
+  position: relative;
+  z-index: 1;
+  .header__top {
+    background: rgba(0, 114, 120, 0.9);
+    .header__top__inner {
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+  .header__inner {
+    padding: 20px 0;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    border-bottom: 1px solid #39353e;
+    .navbar {
+      @media only screen and (max-width: 480px) {
+        display: none;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+    }
+  }
+}

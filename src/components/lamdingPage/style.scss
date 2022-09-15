@@ -1,0 +1,228 @@
+.popular__course__area__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+  flex-direction: row;
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .box {
+    gap: 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media only screen and (max-width: 480px) {
+      gap: 0;
+    }
+    svg {
+      width: 80px;
+      fill: #007278;
+    }
+    span {
+      font-size: 44px;
+      color: #a50344;
+      display: block;
+      font-weight: 300;
+    }
+    h3 {
+      font-size: 30px;
+      color: #007278;
+      font-weight: 700;
+      margin: 0;
+      font-weight: 300;
+    }
+  }
+
+  .fadeBox {
+    display: flex;
+    animation: fadeIn 10s;
+  }
+}
+.search__course {
+  background: url("https://ens.sch.ae/img/online-srv.jpg") no-repeat left top,
+    linear-gradient(#198085, #198085);
+  background-size: cover;
+  padding: 80px 0;
+  background-position: center;
+  position: relative;
+
+  .overlay {
+    background: rgba(0, 114, 120, 0.8);
+  }
+  h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 9;
+  }
+  .search__course__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+    @media only screen and (max-width: 480px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .bi__box__wrapper {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      z-index: 99;
+      @media only screen and (max-width: 480px) {
+        width: 100%;
+        display: none;
+      }
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 99;
+
+      svg {
+        width: 30px;
+        height: 30px;
+        fill: #fff;
+        @media only screen and (max-width: 480px) {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      h3 {
+        color: #fff;
+        @media only screen and (max-width: 480px) {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+.cats__outer {
+  display: flex;
+  width: 100%;
+  padding: 80px 0;
+  justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    padding: 40px 0;
+  }
+
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+  .box {
+    width: 49%;
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+    }
+    h2 {
+      color: #a5036e;
+      font-size: 36px;
+      text-align: center;
+      margin-top: 0;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      object-fit: cover ;
+    }
+    span {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+.employee__opportunities {
+  background: url("https://ens.sch.ae/img/banner/careersBanner.jpg") no-repeat;
+  background-position: left center;
+  padding: 100px 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  @media only screen and (max-width: 480px) {
+    background-position: right;
+  }
+  .overlay {
+    background: rgba(4, 9, 30, 0.2);
+  }
+  button {
+    background: #fff;
+    color: #222;
+    padding: 12px 23px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    z-index: 9;
+    border: 0;
+    &:hover {
+      background-color: #a50344;
+      cursor: pointer;
+    }
+  }
+}
+
+.box__slider_outer {
+  padding-bottom: 80px;
+  h2 {
+    color: #a50344;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 20px;
+    @media only screen and (max-width: 768px) {
+      margin: 0;
+    }
+  }
+  .swiper-slide {
+    img {
+      width: 100%;
+      height: 198px;
+    }
+    span {
+      color: #362f2f;
+      font-size: 14px;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
+
+.accreditations {
+  padding: 80px 0;
+  h1 {
+    margin: 0;
+    text-align: center;
+    color: #a50344;
+    font-size: 36px;
+    font-size: 400;
+  }
+  .accreditation__inner {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 480px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
